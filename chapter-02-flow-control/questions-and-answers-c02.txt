@@ -1,0 +1,8 @@
+Chapter 2 Practice Questions:
+
+1).     What are the two values of the Boolean data type?
+            True and False
+2).     What are the three Boolean operators?
+            "and", "or", and "not".
+3).     Write out the truth tables of each Boolean operator.
+4).     
