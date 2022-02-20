@@ -1,0 +1,43 @@
+Chapter 1 Practice Questions:
+
+1).     Which of the following are operators, and which are values?
+                *       -- This is the operator for multiplication.
+                'hello' -- This is a value of type str.
+                -88.8   -- This is a value of type float.
+                -       -- This is the operator for subtraction.
+                /       -- This is the operator for division.
+                +       -- This is the operator for addition.
+                5       -- This is a value of type int.
+
+2).     Which of the following is a variable, and which is a string.
+                spam    -- This is a variable.
+                'spam'  -- This is a string.
+
+3).     Name three data types.
+                Floats, integers, and strings.
+
+4).     What is an expression made up of? What do all expressions do?
+                An expression is made up of values and operators, and can be evaluated down to a single value. An expression can be substituted whereever a value can be placed.
+
+5).     This chapter introduced assignment statements, like spam=10. What is the difference between an expression and a statement?
+                While an expression is defined above, a statement is a simple expression that an action be executed. For example, in an assignment statement a variable may be defined (e.g., spam=10).
+
+6).     What does the variable "bacon" contain after the following two expressions?
+        bacon = 20 # bacon is assigned the int value of 20.
+        bacon + 1  # 1 is added to the value of bacon, but bacon is not reassigned to the result of this expression.
+                bacon contains the value 20 after these lines.
+
+7).     What should the following two expressions evaluate to?
+        'spam' + 'spamspam'
+        'spam' * 3
+                Both statments evaluate to a single string of 'spamspamspam'.
+
+8).     Why is "eggs" a valid variable name while "100" is invalid?
+                Variables cannot start with a number.
+
+9).     What three functions can be used to get the integer, floating-point number, or string version of a value?
+                Respectively, int(), float(), and str().
+
+10).    Why does this expression cause an error? How can you fix it?
+        'I have eaten ' + 99 + ' burritos.'
+                An int value (99) is being added to a str value. 99 should be converted to a str first, i.e., str(99).
