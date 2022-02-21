@@ -4,12 +4,13 @@ def collatz(number):
     else:
         return 3 * number + 1 # odd.
 
-print('Enter an integer')
-try: 
-    number = int(input())
-    while not (number == 1):
-        number = collatz(number)
-        print(number)
+if __name__ == "__main__":
+    print('Enter an integer:')
+    try: 
+        number = int(input())
+        while not (number == 1):
+            number = collatz(number)
+            print(number)
 
-except:
-    print('Error: you must enter an integer.')
+    except:
+        print('Error: you must enter an integer.')
