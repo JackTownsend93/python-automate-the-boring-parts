@@ -1,0 +1,38 @@
+Chapter 4 Practice Questions:
+
+1).     What is []?
+            The opening and closing of a list.
+2).     How would you assign the value 'hello' as the third value in a list stored in a variable named spam?
+            spam[2] = 'hello'
+For spam = ['a','b','c','d']...
+3).     What does spam[int(int('3'*2)//11)] evaluate to?
+            '3'*2 == '33', int('32')//11 == 3, spam[3] == 'd'
+4).     What does spam[-1] evaluate to?
+            Final value in list, i.e., 'd'.
+5).     What does spam[:2] evaluate to?
+            A list slice of the first two indices, i.e., ['a','b'].
+For bacon = [3.14, 'cat', 11, 'cat', True]...
+6).     What does bacon.index('cat') evaluate to?
+            The first index in which 'cat' appears, i.e., 1.
+7). What does bacon.append(99) make the list value in bacon look like?
+            Appends 99, i.e., [3.14, 'cat', 11, 'cat', True, 99]
+8). What does bacon.remove('cat') make the list value in bacon look like?
+            Removes the first instance of 'cat', i.e., [3.14, 11, 'cat', True]
+9). What are the operators for list concatenation and list replication?
+            + and * respectively.
+10). What is the difference between append() and insert() list methods?
+            append() adds to the end of a list, insert() specifies and index at which to add.
+11). What are the two ways to remove values from a list?
+            del() and remove()
+12). Name a few ways that list values are similar to string values:
+            Strings are an array of characters, lists are an array of variables. Both can be concatenated, replicated.
+13). What is the difference between lists and tuples.
+            List are mutable, tuples are not.
+14). How do you type the tuple value that has just the integer 42 in it?
+            (42)
+15). How do you get the tuple form of a list value? How can you get the list form of a tuple value?
+            tuple() and list(), respectively.
+16). Variables that "contain" list values don't actually contain lists directly. What do they contain instead?
+            References to the list.
+17). What is the difference between copy.copy() and copy.deepcopy()?
+            copy.copy() makes a copy of a mutable value like a list or dictionary (rather than just copying the reference, as copy() would do). deepcopy() copies lists that contain lists.
