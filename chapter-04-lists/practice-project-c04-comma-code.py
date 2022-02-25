@@ -11,6 +11,6 @@ def list2str(listOfStrings):
     return strOut
 
 if __name__ == "__main__":
-    spam = ['apples', 'bananas', 'tofu', 'cats']
+    spam = [1, 'bananas', 'tofu', 'cats']
     print(list2str(spam))
     
