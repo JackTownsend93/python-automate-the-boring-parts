@@ -12,6 +12,7 @@ def printBoard(board):
     return 0
 
 if __name__ == "__main__":
+    turnCount = 0
     win = False
     turn = 'X'
     while win == False:
@@ -74,6 +75,12 @@ if __name__ == "__main__":
                 break
             else:
                 break
+
+        # Increment turn counter and check for stalemate.
+        turnCount += 1
+        if turnCount == 9:
+            print('<<< STALEMATE! >>>')
+            break
 
         # Turn over to next player.
         if turn == 'X':
