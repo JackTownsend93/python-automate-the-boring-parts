@@ -1,0 +1,23 @@
+Chapter 5 Practice Questions:
+
+1).     What does the code for an empty dictionary look like?
+            emptyDict = {}    (i.e., curly braces define a dict)
+2).     What does the dictionary value with a key 'foo' and value 42 look like?
+            fooDict = {'foo': 42}
+3).     What is the main difference between a dictionary and a list?
+            Dictionaries are unordered.
+4).     What happens if you try to access spam['foo'] is spam is {'bar': 100}?
+            No key of 'foo', thus key error.
+5).     If a dictionary is stored in spam, what is the difference between the expressions 'car' in spam and 'car' in spam.keys()?
+            Nothing (in checks for existance of a key value)
+6).     If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+            'cat' in spam will return whether 'cat' exists at a key, 'cat' in spam.values() will return the keys for which the value is 'cat'.
+7).     What is a shortcut for the following code?
+        if 'color' not in spam:
+            spam['color'] = 'black'
+        
+            Use the setDefault method:
+            spam.setDefault('color', 'black')
+8).     What module and function can be used to "pretty print" dictionary values?
+            pprint.pprint()
+            
