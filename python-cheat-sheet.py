@@ -1,9 +1,29 @@
 # PYTHON CHEAT SHEET
 # Quick reference file for language basics
 
+# ----------------------------------------        STRINGS        ---------------------------------------- #
+# Strings are denoteed by either ' ' or " "
+string = 'Hello, world!'
+
+# Useful string functions
+string.find()
+string.index()
+string.isalnum()
+string.isalpha()
+string.isdecimal()
+string.islower()
+string.isupper()
+string.startswith()
+string.endswith()
+string.join()
+string.split()
+string.ljust(20,' ')
+string.center(20)
+string.strip()
+
 # ----------------------------------------         LISTS         ---------------------------------------- #
 # Lists are ordered
-list = ['1', '2', '3']     # Brackets
+list = ['1', '2', '3']  # Brackets
 
 firstItem = list[0]     # Index from beginning
 lastItem = list[-1]     # Index from end
