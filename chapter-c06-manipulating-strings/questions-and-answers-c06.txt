@@ -1,0 +1,30 @@
+Chapter 6 Practice Questions:
+
+1).     What are escape characters?
+            Escape characters allow for special expressions within strings.
+2).     What do the \n and \t escape characters represent?
+            \n is a newline, \t is tab.
+3).     How can you put a \ character in a string?
+            \\
+4).     The string value 'Howl's moving castle" is a valid string, why?
+            Use of " " to mark the start and end of teh string allows for ' to not be parsed as a string termination
+5).     If you don't want to use \n in you string, how can you write a string with new lines in it?
+            Multiline strings:
+                """Line 1
+                   Line 2 """
+6).     What do the following expressions evaluate to?
+            'Hello world!'[1] == 'e'
+            'Hello world!'[0:5] == 'Hello'
+            'Hello world!'[:5] == 'Hello'
+            'Hello world!'[3:] == 'lo world!'
+7).     What do the following expressions evaluate to?
+            'Hello'.upper() == 'HELLO'
+            'Hello'.upper().isupper() == True
+            'Hello'.upper().lower() == 'hello'
+8).     What do the following expression evaluate to?
+            'Remember, remember, the fifth of November.'.split() == ['Remember,' 'remember,', 'the', 'fifth' ...]
+            '-'.join('There can be only one.'.split())'There-can-be-only-one.'
+9).     What string methods can you use to justify and centre text?
+            ljust(), rjust(), center()
+10).    How can you trim whitespace characters form the beginning or end of a string?
+            lstrip() and rstrip()
