@@ -2,7 +2,7 @@
 # Quick reference file for language basics
 
 # ----------------------------------------        STRINGS        ---------------------------------------- #
-# Strings are denoteed by either ' ' or " "
+# Strings are denoted by either ' ' or " "
 string = 'Hello, world!'
 
 # Useful string functions
@@ -155,3 +155,20 @@ vowelRegex = re.compile(r'[aeiouAEIOU]') # All vowels
 
 # Use a caret to apply negative character class.
 vowelRegex = re.compile(r'[^aeiouAEIOU]') # Not vowels
+
+# Case insensitive matching
+re.compile(r'CaSeInSeNsItIvE', re.I)
+
+# sub() method for find and replace (substitute) purposes
+namesRegex = re.compile(r'Agent \w+')
+namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob')
+
+# Verbose mode for complicated regexs
+phoneRegex = re.compile(r'''
+    (\d{3}|\(\d{3}\))?              # area code
+    (\s|-|\.)?                      # separator
+    (\d{3})                         # first three digits
+    (\s|-|\.)?                      # separator
+    (\d{4})                         # last 4 digits
+    (\s*(ext|x|ext.)\s*(\d{2,5}))?  # extension
+    )''', re.VERBOSE)
