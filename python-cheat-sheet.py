@@ -1,6 +1,23 @@
 # PYTHON CHEAT SHEET
 # Quick reference file for language basics
 
+# ----------------------------------------  RUNNING OUTSIDE IDE  ---------------------------------------- #
+# To run a python script "usefully" outside an IDE, begin the .py file with a shebang line that informs the
+# OS that python should be used to execute the programme.
+#
+# Windows shebang: #! python3
+#
+# To create a batchfile, create a textfile with extension .bat containing the following:
+#
+# @py.exe C:\path\to\your\python\script.py %*
+# @pause
+#
+# Best practice is keep all python scripts in one location and add that location to your system path:
+# Start -> Edit environment variables for your account -> System Variables -> Path -> Edit -> path to your 
+# python scripts.
+# 
+# Once added to the system path, scripts can be run from Win + R 
+
 # ----------------------------------------        STRINGS        ---------------------------------------- #
 # Strings are denoted by either ' ' or " "
 string = 'Hello, world!'
